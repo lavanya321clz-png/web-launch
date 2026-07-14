@@ -73,7 +73,7 @@ export const Testimonials: React.FC = () => {
             whileInView={{ width: '80px' }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="h-1 bg-purple-500 mx-auto rounded-full"
+            className="h-1 bg-blue-500 mx-auto rounded-full"
           />
         </div>
 
@@ -83,7 +83,7 @@ export const Testimonials: React.FC = () => {
           {/* Navigation Arrows */}
           <button
             onClick={() => { slidePrev(); resetTimer(); }}
-            className="absolute left-0 z-20 p-2 rounded-full glass-card border border-white/5 text-gray-400 hover:text-white hover:border-purple-500/20 cursor-pointer hidden md:flex items-center justify-center transition-all duration-300"
+            className="absolute left-0 z-20 p-2 rounded-full glass-card border border-white/5 text-gray-400 hover:text-white hover:border-blue-500/20 cursor-pointer hidden md:flex items-center justify-center transition-all duration-300"
             aria-label="Previous slide"
           >
             <ChevronLeft className="w-5 h-5" />
@@ -91,7 +91,7 @@ export const Testimonials: React.FC = () => {
           
           <button
             onClick={() => { slideNext(); resetTimer(); }}
-            className="absolute right-0 z-20 p-2 rounded-full glass-card border border-white/5 text-gray-400 hover:text-white hover:border-purple-500/20 cursor-pointer hidden md:flex items-center justify-center transition-all duration-300"
+            className="absolute right-0 z-20 p-2 rounded-full glass-card border border-white/5 text-gray-400 hover:text-white hover:border-blue-500/20 cursor-pointer hidden md:flex items-center justify-center transition-all duration-300"
             aria-label="Next slide"
           >
             <ChevronRight className="w-5 h-5" />
@@ -110,7 +110,7 @@ export const Testimonials: React.FC = () => {
                 className="glass-card rounded-3xl p-8 sm:p-10 border border-white/5 relative flex flex-col justify-between text-left h-full w-full select-none"
               >
                 {/* Quote details indicator */}
-                <Quote className="absolute top-8 right-8 w-16 h-16 text-purple-500/5 pointer-events-none" />
+                <Quote className="absolute top-8 right-8 w-16 h-16 text-blue-500/5 pointer-events-none" />
 
                 <div className="space-y-6">
                   {/* Stars list */}
@@ -128,7 +128,7 @@ export const Testimonials: React.FC = () => {
 
                 {/* Profile card metadata */}
                 <div className="flex items-center gap-4 mt-8 pt-6 border-t border-white/5">
-                  <div className="w-12 h-12 rounded-full overflow-hidden border border-purple-500/20">
+                  <div className="w-12 h-12 rounded-full overflow-hidden border border-blue-500/20">
                     <img
                       src={currentTestimonial.avatar}
                       alt={currentTestimonial.name}
@@ -139,7 +139,7 @@ export const Testimonials: React.FC = () => {
                     <h3 className="font-bold text-white text-sm sm:text-base">
                       {currentTestimonial.name}
                     </h3>
-                    <div className="text-xs text-purple-400 font-medium">
+                    <div className="text-xs text-blue-400 font-medium">
                       {currentTestimonial.role} at <span className="text-gray-400">{currentTestimonial.company}</span>
                     </div>
                   </div>
@@ -158,7 +158,7 @@ export const Testimonials: React.FC = () => {
               onClick={() => { setDirection(i > currentIndex ? 1 : -1); setCurrentIndex(i); resetTimer(); }}
               className={`w-2.5 h-2.5 rounded-full cursor-pointer transition-all duration-300 ${
                 currentIndex === i 
-                  ? 'bg-purple-500 w-6' 
+                  ? 'bg-blue-500 w-6' 
                   : 'bg-white/10 hover:bg-white/20'
               }`}
               aria-label={`Go to slide ${i + 1}`}

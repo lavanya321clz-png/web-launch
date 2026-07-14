@@ -49,7 +49,7 @@ export const Certifications: React.FC = () => {
             whileInView={{ width: '80px' }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="h-1 bg-purple-500 mx-auto rounded-full"
+            className="h-1 bg-blue-500 mx-auto rounded-full"
           />
         </div>
 
@@ -67,16 +67,16 @@ export const Certifications: React.FC = () => {
               <motion.div
                 key={idx}
                 variants={itemVariants}
-                className="glass-card rounded-2xl p-6 border border-white/5 relative overflow-hidden group hover:border-purple-500/20 hover:bg-[#10102b]/40 transition-all duration-300 flex items-start gap-4 text-left"
+                className="glass-card rounded-2xl p-6 border border-white/5 relative overflow-hidden group hover:border-blue-500/20 hover:bg-[#06193a]/40 transition-all duration-300 flex items-start gap-4 text-left"
               >
                 {/* Visual Icon panel */}
-                <div className="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 group-hover:scale-110 shrink-0 transition-transform duration-300">
+                <div className="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 group-hover:scale-110 shrink-0 transition-transform duration-300">
                   <Icon className="w-6 h-6" />
                 </div>
 
                 <div className="space-y-2 flex-1">
                   <div className="flex items-center justify-between">
-                    <span className="text-[10px] font-bold text-purple-400 bg-purple-500/10 border border-purple-500/15 px-2 py-0.5 rounded uppercase tracking-wider">
+                    <span className="text-[10px] font-bold text-blue-400 bg-blue-500/10 border border-blue-500/15 px-2 py-0.5 rounded uppercase tracking-wider">
                       Verified
                     </span>
                     <span className="text-xs text-gray-500 font-medium">
@@ -84,12 +84,12 @@ export const Certifications: React.FC = () => {
                     </span>
                   </div>
 
-                  <h3 className="text-sm sm:text-base font-bold text-white leading-snug group-hover:text-purple-300 transition-colors">
+                  <h3 className="text-sm sm:text-base font-bold text-white leading-snug group-hover:text-blue-300 transition-colors">
                     {cert.name}
                   </h3>
 
                   <div className="flex items-center gap-1 text-xs text-gray-400 font-medium">
-                    <ShieldCheck className="w-3.5 h-3.5 text-purple-500" />
+                    <ShieldCheck className="w-3.5 h-3.5 text-blue-500" />
                     <span>{cert.issuer}</span>
                   </div>
                 </div>

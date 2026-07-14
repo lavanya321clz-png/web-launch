@@ -35,7 +35,7 @@ export const Skills: React.FC = () => {
   };
 
   return (
-    <section id="skills" className="py-24 relative overflow-hidden bg-gradient-to-b from-transparent to-[#05001a]/30">
+    <section id="skills" className="py-24 relative overflow-hidden bg-gradient-to-b from-transparent to-[#031040]/30">
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         
         {/* Title */}
@@ -54,7 +54,7 @@ export const Skills: React.FC = () => {
             whileInView={{ width: '80px' }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="h-1 bg-purple-500 mx-auto rounded-full"
+            className="h-1 bg-blue-500 mx-auto rounded-full"
           />
         </div>
 
@@ -69,11 +69,11 @@ export const Skills: React.FC = () => {
                 onClick={() => setActiveCategory(category.id)}
                 className={`flex items-center gap-2 px-5 py-3 rounded-full text-sm font-semibold tracking-wide transition-all cursor-pointer duration-300 border ${
                   isActive 
-                    ? 'bg-gradient-to-r from-purple-600 to-blue-600 border-purple-500 text-white shadow-[0_0_15px_rgba(139,92,246,0.3)]' 
+                    ? 'bg-gradient-to-r from-blue-700 to-blue-500 border-blue-500 text-white shadow-[0_0_15px_rgba(59,130,246,0.3)]' 
                     : 'glass-card border-white/5 text-gray-400 hover:text-white hover:border-white/10'
                 }`}
               >
-                <Icon className={`w-4 h-4 ${isActive ? 'text-white' : 'text-purple-400'}`} />
+                <Icon className={`w-4 h-4 ${isActive ? 'text-white' : 'text-blue-400'}`} />
                 {category.label}
               </button>
             );
@@ -95,13 +95,13 @@ export const Skills: React.FC = () => {
                 <motion.div
                   key={skill.name}
                   variants={itemVariants}
-                  className="glass-card rounded-2xl p-5 border border-white/5 relative overflow-hidden group hover:border-purple-500/20 transition-all duration-300"
+                  className="glass-card rounded-2xl p-5 border border-white/5 relative overflow-hidden group hover:border-blue-500/20 transition-all duration-300"
                 >
                   <div className="flex justify-between items-center mb-3">
                     <span className="text-sm font-semibold text-gray-200 group-hover:text-white transition-colors">
                       {skill.name}
                     </span>
-                    <span className="text-xs font-bold text-purple-400">
+                    <span className="text-xs font-bold text-blue-400">
                       {skill.level}%
                     </span>
                   </div>
@@ -112,12 +112,12 @@ export const Skills: React.FC = () => {
                       initial={{ width: 0 }}
                       animate={{ width: `${skill.level}%` }}
                       transition={{ duration: 1, ease: 'easeOut', delay: idx * 0.05 }}
-                      className="h-full bg-gradient-to-r from-purple-500 to-blue-500 rounded-full"
+                      className="h-full bg-gradient-to-r from-blue-500 to-sky-400 rounded-full"
                     />
                   </div>
 
                   {/* Subtly glows under the bar on hover */}
-                  <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-purple-500 to-blue-500 opacity-0 group-hover:opacity-60 transition-opacity duration-300 shadow-[0_-2px_10px_#8b5cf6]" />
+                  <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-blue-500 to-sky-400 opacity-0 group-hover:opacity-60 transition-opacity duration-300 shadow-[0_-2px_10px_#3b82f6]" />
                 </motion.div>
               ))}
             </motion.div>

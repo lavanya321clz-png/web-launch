@@ -69,7 +69,7 @@ export const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-card border border-purple-500/30 text-purple-400 text-xs font-semibold uppercase tracking-wider"
+            className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-card border border-blue-500/30 text-blue-400 text-xs font-semibold uppercase tracking-wider"
           >
             <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
             Available for new opportunities
@@ -93,7 +93,7 @@ export const Hero: React.FC = () => {
             >
               <span>A&nbsp;</span>
               <span className="gradient-text-purple-blue">{typedText}</span>
-              <span className="inline-block w-[3px] h-[1.1em] bg-purple-500 ml-1 animate-[pulse_1s_infinite]" />
+              <span className="inline-block w-[3px] h-[1.1em] bg-blue-400 ml-1 animate-[pulse_1s_infinite]" />
             </motion.div>
           </div>
 
@@ -115,17 +115,17 @@ export const Hero: React.FC = () => {
           >
             <button
               onClick={() => handleScrollTo('contact')}
-              className="glow-btn px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 text-white rounded-full font-semibold text-sm shadow-[0_0_15px_rgba(139,92,246,0.35)] flex items-center justify-center gap-2 cursor-pointer transition-all duration-300"
+              className="glow-btn px-8 py-4 bg-gradient-to-r from-blue-700 to-blue-500 hover:from-blue-600 hover:to-sky-400 text-white rounded-full font-semibold text-sm shadow-[0_0_15px_rgba(59,130,246,0.35)] flex items-center justify-center gap-2 cursor-pointer transition-all duration-300"
             >
               Contact Me
               <ArrowRight className="w-4 h-4" />
             </button>
             <a
               href={personalInfo.resumeUrl}
-              className="px-8 py-4 glass-card border border-white/10 hover:border-purple-500/40 text-gray-200 hover:text-white rounded-full font-semibold text-sm flex items-center justify-center gap-2 cursor-pointer transition-all duration-300"
+              className="px-8 py-4 glass-card border border-white/10 hover:border-blue-500/40 text-gray-200 hover:text-white rounded-full font-semibold text-sm flex items-center justify-center gap-2 cursor-pointer transition-all duration-300"
             >
               Download Resume
-              <Download className="w-4 h-4 text-purple-400" />
+              <Download className="w-4 h-4 text-blue-400" />
             </a>
           </motion.div>
 
@@ -136,13 +136,13 @@ export const Hero: React.FC = () => {
             transition={{ duration: 0.5, delay: 0.5 }}
             className="flex items-center space-x-4 pt-4 text-gray-400"
           >
-            <a href={personalInfo.github} target="_blank" rel="noreferrer" className="hover:text-purple-400 transition-colors" aria-label="GitHub">
+            <a href={personalInfo.github} target="_blank" rel="noreferrer" className="hover:text-blue-400 transition-colors" aria-label="GitHub">
               <Github className="w-5 h-5" />
             </a>
-            <a href={personalInfo.linkedin} target="_blank" rel="noreferrer" className="hover:text-purple-400 transition-colors" aria-label="LinkedIn">
+            <a href={personalInfo.linkedin} target="_blank" rel="noreferrer" className="hover:text-blue-400 transition-colors" aria-label="LinkedIn">
               <Linkedin className="w-5 h-5" />
             </a>
-            <a href={personalInfo.twitter} target="_blank" rel="noreferrer" className="hover:text-purple-400 transition-colors" aria-label="Twitter">
+            <a href={personalInfo.twitter} target="_blank" rel="noreferrer" className="hover:text-blue-400 transition-colors" aria-label="Twitter">
               <Twitter className="w-5 h-5" />
             </a>
           </motion.div>
@@ -157,10 +157,10 @@ export const Hero: React.FC = () => {
             className="relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96"
           >
             {/* Ambient gradients */}
-            <div className="absolute inset-0 rounded-3xl bg-gradient-to-tr from-purple-600 to-blue-600 blur-[30px] opacity-30 animate-pulse-slow" />
+            <div className="absolute inset-0 rounded-3xl bg-gradient-to-tr from-blue-700 to-blue-400 blur-[30px] opacity-30 animate-pulse-slow" />
             
             {/* Visual borders frame */}
-            <div className="absolute inset-2 rounded-3xl bg-gradient-to-tr from-purple-500 to-blue-500 opacity-20" />
+            <div className="absolute inset-2 rounded-3xl bg-gradient-to-tr from-blue-600 to-sky-400 opacity-20" />
             
             <div className="absolute inset-0 rounded-3xl overflow-hidden glass-card border border-white/10 p-3">
               <img
@@ -175,7 +175,7 @@ export const Hero: React.FC = () => {
             <motion.div
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -top-4 -right-4 glass-card border border-purple-500/30 px-3.5 py-2 rounded-2xl flex items-center gap-2 shadow-lg"
+              className="absolute -top-4 -right-4 glass-card border border-blue-500/30 px-3.5 py-2 rounded-2xl flex items-center gap-2 shadow-lg"
             >
               <span className="text-xl">💻</span>
               <span className="text-xs font-semibold text-white/95">Full-Stack dev</span>

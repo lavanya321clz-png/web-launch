@@ -65,7 +65,7 @@ export const About: React.FC = () => {
             whileInView={{ width: '80px' }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="h-1 bg-purple-500 mx-auto rounded-full"
+            className="h-1 bg-blue-500 mx-auto rounded-full"
           />
         </div>
 
@@ -81,10 +81,10 @@ export const About: React.FC = () => {
             <motion.div
               key={idx}
               variants={itemVariants}
-              className="glass-card rounded-2xl p-6 text-center border border-white/5 relative overflow-hidden group hover:border-purple-500/20 transition-all duration-300"
+              className="glass-card rounded-2xl p-6 text-center border border-white/5 relative overflow-hidden group hover:border-blue-500/20 transition-all duration-300"
             >
-              <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/5 to-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              <div className="text-3xl sm:text-4xl font-extrabold text-purple-400 mb-1">
+              <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/5 to-sky-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="text-3xl sm:text-4xl font-extrabold text-blue-400 mb-1">
                 <AnimatedCounter value={stat.value} suffix={stat.suffix} />
               </div>
               <div className="text-xs sm:text-sm text-gray-400 font-medium uppercase tracking-wider">
@@ -111,9 +111,9 @@ export const About: React.FC = () => {
             <p className="text-gray-400 leading-relaxed text-sm sm:text-base">
               {aboutMe.intro}
             </p>
-            <div className="glass-card rounded-2xl p-6 border border-white/5 relative overflow-hidden bg-gradient-to-r from-purple-500/5 to-transparent">
-              <div className="absolute top-0 left-0 bottom-0 w-1 bg-purple-500" />
-              <h4 className="text-sm font-semibold text-purple-400 uppercase tracking-wider mb-2">Career Objective</h4>
+            <div className="glass-card rounded-2xl p-6 border border-white/5 relative overflow-hidden bg-gradient-to-r from-blue-500/5 to-transparent">
+              <div className="absolute top-0 left-0 bottom-0 w-1 bg-blue-500" />
+              <h4 className="text-sm font-semibold text-blue-400 uppercase tracking-wider mb-2">Career Objective</h4>
               <p className="text-gray-300 text-sm leading-relaxed">
                 {aboutMe.objective}
               </p>
@@ -122,7 +122,7 @@ export const About: React.FC = () => {
             {/* Languages known */}
             <div className="space-y-3 pt-2">
               <h4 className="text-base font-semibold text-white flex items-center gap-2">
-                <Languages className="w-5 h-5 text-purple-400" />
+                <Languages className="w-5 h-5 text-blue-400" />
                 Languages Known
               </h4>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -155,9 +155,9 @@ export const About: React.FC = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: idx * 0.1 }}
-                  className="flex items-start gap-4 p-4 rounded-xl glass-card border border-white/5 hover:border-purple-500/10 transition-colors"
+                  className="flex items-start gap-4 p-4 rounded-xl glass-card border border-white/5 hover:border-blue-500/10 transition-colors"
                 >
-                  <CheckCircle2 className="w-5 h-5 text-purple-400 shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" />
                   <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
                     {strength}
                   </p>

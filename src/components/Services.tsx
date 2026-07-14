@@ -29,7 +29,7 @@ export const Services: React.FC = () => {
   };
 
   return (
-    <section id="services" className="py-24 relative overflow-hidden bg-gradient-to-b from-[#05001a]/25 to-transparent">
+    <section id="services" className="py-24 relative overflow-hidden bg-gradient-to-b from-[#031040]/25 to-transparent">
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         
         {/* Title */}
@@ -48,7 +48,7 @@ export const Services: React.FC = () => {
             whileInView={{ width: '80px' }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="h-1 bg-purple-500 mx-auto rounded-full"
+            className="h-1 bg-blue-500 mx-auto rounded-full"
           />
         </div>
 
@@ -66,20 +66,20 @@ export const Services: React.FC = () => {
               <motion.div
                 key={idx}
                 variants={itemVariants}
-                className="glass-card rounded-2xl p-8 border border-white/5 relative overflow-hidden group hover:border-purple-500/25 hover:bg-[#10102b]/40 hover:shadow-[0_8px_32px_rgba(139,92,246,0.1)] transition-all duration-300 flex flex-col justify-between text-left h-full"
+                className="glass-card rounded-2xl p-8 border border-white/5 relative overflow-hidden group hover:border-blue-500/25 hover:bg-[#06193a]/40 hover:shadow-[0_8px_32px_rgba(59,130,246,0.1)] transition-all duration-300 flex flex-col justify-between text-left h-full"
               >
                 {/* Backlight glow orb inside the card */}
-                <div className="absolute -top-12 -right-12 w-28 h-28 rounded-full bg-gradient-to-tr from-purple-500/10 to-blue-500/10 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute -top-12 -right-12 w-28 h-28 rounded-full bg-gradient-to-tr from-blue-500/10 to-sky-500/10 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 
                 <div className="space-y-6 relative z-10">
                   {/* Glowing icon badge */}
-                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-tr from-purple-500/10 to-blue-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 group-hover:scale-110 group-hover:text-white transition-all duration-300 relative shadow-inner">
+                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-tr from-blue-500/10 to-sky-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 group-hover:scale-110 group-hover:text-white transition-all duration-300 relative shadow-inner">
                     <Icon className="w-7 h-7" />
-                    <div className="absolute inset-0 rounded-2xl bg-purple-500/10 opacity-0 group-hover:opacity-100 blur-[8px] transition-opacity" />
+                    <div className="absolute inset-0 rounded-2xl bg-blue-500/10 opacity-0 group-hover:opacity-100 blur-[8px] transition-opacity" />
                   </div>
 
                   <div className="space-y-3">
-                    <h3 className="text-xl font-bold text-white group-hover:text-purple-400 transition-colors duration-300">
+                    <h3 className="text-xl font-bold text-white group-hover:text-blue-400 transition-colors duration-300">
                       {service.title}
                     </h3>
                     <p className="text-gray-400 text-sm leading-relaxed">
@@ -88,7 +88,7 @@ export const Services: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="mt-8 pt-6 border-t border-white/5 flex items-center gap-2 text-xs font-bold text-purple-400 uppercase tracking-wide group-hover:text-white transition-colors duration-300 relative z-10">
+                <div className="mt-8 pt-6 border-t border-white/5 flex items-center gap-2 text-xs font-bold text-blue-400 uppercase tracking-wide group-hover:text-white transition-colors duration-300 relative z-10">
                   <span>Learn More</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </div>

@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export const BackgroundEffect: React.FC = () => {
   return (
-    <div className="fixed inset-0 -z-50 overflow-hidden bg-[#02000f]">
+    <div className="fixed inset-0 -z-50 overflow-hidden bg-[#030e27]">
       {/* Background glow orbs */}
       <motion.div 
         animate={{
@@ -16,7 +16,7 @@ export const BackgroundEffect: React.FC = () => {
           repeat: Infinity,
           ease: "easeInOut"
         }}
-        className="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] rounded-full bg-purple-800/10 blur-[130px]"
+        className="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] rounded-full bg-blue-800/12 blur-[130px]"
       />
       <motion.div 
         animate={{
@@ -29,7 +29,7 @@ export const BackgroundEffect: React.FC = () => {
           repeat: Infinity,
           ease: "easeInOut"
         }}
-        className="absolute bottom-[-10%] right-[-10%] w-[50vw] h-[50vw] rounded-full bg-blue-700/10 blur-[130px]"
+        className="absolute bottom-[-10%] right-[-10%] w-[50vw] h-[50vw] rounded-full bg-sky-700/10 blur-[130px]"
       />
       <motion.div 
         animate={{
@@ -41,7 +41,7 @@ export const BackgroundEffect: React.FC = () => {
           repeat: Infinity,
           ease: "easeInOut"
         }}
-        className="absolute top-[40%] right-[15%] w-[35vw] h-[35vw] rounded-full bg-violet-600/5 blur-[100px]"
+        className="absolute top-[40%] right-[15%] w-[35vw] h-[35vw] rounded-full bg-blue-600/5 blur-[100px]"
       />
 
       {/* Grid line grid overlay with circular mask */}

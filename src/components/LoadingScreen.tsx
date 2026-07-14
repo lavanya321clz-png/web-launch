@@ -56,9 +56,9 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
         y: -100, 
         transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } 
       }}
-      className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-[#02000f] text-gray-300 font-mono p-4"
+      className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-[#030e27] text-gray-300 font-mono p-4"
     >
-      <div className="w-full max-w-md glass-card rounded-lg p-6 border border-purple-500/20 shadow-2xl relative overflow-hidden">
+      <div className="w-full max-w-md glass-card rounded-lg p-6 border border-blue-900/20 shadow-2xl relative overflow-hidden">
         {/* Terminal window buttons */}
         <div className="flex items-center gap-2 mb-4 border-b border-white/5 pb-2">
           <div className="w-3 h-3 rounded-full bg-red-500/80" />
@@ -75,9 +75,9 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
               initial={{ opacity: 0, x: -10 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.2 }}
-              className={idx === logs.length - 1 ? "text-purple-400" : "text-gray-400"}
+              className={idx === logs.length - 1 ? "text-blue-400" : "text-gray-400"}
             >
-              <span className="text-purple-600 mr-2">$</span>
+              <span className="text-blue-600 mr-2">$</span>
               {log}
             </motion.div>
           ))}
@@ -91,7 +91,7 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
           </div>
           <div className="w-full h-1 bg-white/5 rounded-full overflow-hidden">
             <motion.div
-              className="h-full bg-gradient-to-r from-purple-500 to-blue-500"
+              className="h-full bg-gradient-to-r from-blue-400 to-sky-500"
               initial={{ width: 0 }}
               animate={{ width: `${progress}%` }}
               transition={{ ease: "easeInOut" }}
@@ -100,7 +100,7 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
         </div>
 
         {/* Backdrop glows */}
-        <div className="absolute -bottom-10 -right-10 w-24 h-24 bg-purple-500/10 rounded-full blur-2xl pointer-events-none" />
+        <div className="absolute -bottom-10 -right-10 w-24 h-24 bg-blue-500/10 rounded-full blur-2xl pointer-events-none" />
       </div>
     </motion.div>
   );

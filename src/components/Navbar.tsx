@@ -64,7 +64,7 @@ export const Navbar: React.FC = () => {
           className="text-xl font-bold tracking-tight cursor-pointer flex items-center gap-1 group"
         >
           <span className="text-white font-semibold">Alex</span>
-          <span className="text-purple-500 group-hover:text-purple-400 transition-colors duration-300">Morgan.</span>
+          <span className="text-blue-400 group-hover:text-blue-300 transition-colors duration-300">Morgan.</span>
         </button>
 
         {/* Desktop Navigation Links */}
@@ -82,7 +82,7 @@ export const Navbar: React.FC = () => {
               {activeSection === item.id && (
                 <motion.span
                   layoutId="activeNavBackground"
-                  className="absolute inset-0 bg-purple-500/10 rounded-full border border-purple-500/20"
+                  className="absolute inset-0 bg-blue-500/10 rounded-full border border-blue-500/20"
                   transition={{ type: 'spring', stiffness: 380, damping: 30 }}
                 />
               )}
@@ -95,7 +95,7 @@ export const Navbar: React.FC = () => {
         <div className="hidden md:flex items-center">
           <button
             onClick={() => handleNavClick('contact')}
-            className="glow-btn px-5 py-2.5 rounded-full text-xs font-semibold tracking-wide bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 text-white shadow-[0_0_15px_rgba(139,92,246,0.3)] hover:shadow-[0_0_20px_rgba(139,92,246,0.5)] transition-all duration-300 flex items-center gap-1.5 cursor-pointer z-10"
+            className="glow-btn px-5 py-2.5 rounded-full text-xs font-semibold tracking-wide bg-gradient-to-r from-blue-700 to-blue-500 hover:from-blue-600 hover:to-sky-400 text-white shadow-[0_0_15px_rgba(59,130,246,0.3)] hover:shadow-[0_0_20px_rgba(59,130,246,0.5)] transition-all duration-300 flex items-center gap-1.5 cursor-pointer z-10"
           >
             Hire Me
             <ArrowUpRight className="w-3.5 h-3.5" />
@@ -129,7 +129,7 @@ export const Navbar: React.FC = () => {
                   onClick={() => handleNavClick(item.id)}
                   className={`text-left py-2 px-4 rounded-lg text-sm font-medium transition-all ${
                     activeSection === item.id 
-                      ? 'text-white bg-purple-500/10 border-l-2 border-purple-500 pl-3' 
+                      ? 'text-white bg-blue-500/10 border-l-2 border-blue-500 pl-3' 
                       : 'text-gray-400 hover:text-white pl-2'
                   }`}
                 >
@@ -138,7 +138,7 @@ export const Navbar: React.FC = () => {
               ))}
               <button
                 onClick={() => handleNavClick('contact')}
-                className="w-full text-center py-3 rounded-lg text-xs font-semibold bg-gradient-to-r from-purple-600 to-blue-600 text-white cursor-pointer"
+                className="w-full text-center py-3 rounded-lg text-xs font-semibold bg-gradient-to-r from-blue-700 to-blue-500 text-white cursor-pointer"
               >
                 Hire Me
               </button>
