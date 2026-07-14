@@ -28,75 +28,138 @@ CREATE TABLE public.messages (
 INSERT INTO public.portfolio (data) VALUES (
 '{
   "personalInfo": {
-    "fullName": "Alex Morgan",
+    "fullName": "Lavanya Ponnusamy",
     "title": "Full Stack Developer",
     "tagline": "Building high-performance, beautiful, and scalable web solutions.",
-    "description": "I am a passionate software developer specializing in building modern web applications. With expertise spanning frontend aesthetics and backend architecture, I create robust digital experiences that solve real-world problems.",
+    "description": "I am a passionate software developer with 1 year of professional experience, specializing in building modern web applications. With expertise spanning frontend aesthetics and backend architecture using ASP.NET Core & C#, I create robust digital experiences that solve real-world problems.",
     "resumeUrl": "#",
-    "avatar": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=400&q=80",
-    "email": "alex.morgan.dev@email.com",
-    "phone": "+1 (555) 019-2834",
-    "location": "San Francisco, CA",
+    "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80",
+    "email": "lavanyaponnusamy07@gmail.com",
+    "phone": "9344850181",
+    "location": "Kunnathur, Tiruppur, Tamil Nadu",
     "github": "https://github.com",
     "linkedin": "https://linkedin.com",
     "twitter": "https://twitter.com"
   },
   "aboutMe": {
-    "intro": "Hello! I am Alex Morgan, a Full Stack Developer with 4+ years of professional experience building web apps.",
-    "objective": "To leverage my skills in React, TypeScript, Node.js, and cloud architectures to build robust, scalable products that deliver outstanding user experiences and drive business success.",
+    "intro": "Hello! I''m Lavanya Ponnusamy, a Full Stack Developer with 1 year of professional experience building web apps.",
+    "objective": "To leverage my skills in ASP.NET Core, C#, React, and PostgreSQL to build robust, scalable products that deliver outstanding user experiences and drive business success.",
     "strengths": [
       "Clean, maintainable code practitioner (SOLID, design patterns)",
       "Strong problem-solving skills and algorithmic thinking",
-      "Effective communicator and collaborative team player",
+      "Effective communicator & collaborative team player",
       "Adaptable and quick learner of new technologies",
       "User-centric design mindset with attention to detail"
     ],
     "languages": [
-      {"name": "English", "level": "Fluent / Professional"},
-      {"name": "Spanish", "level": "Conversational"},
-      {"name": "German", "level": "Elementary"}
+      {
+        "name": "Tamil",
+        "level": "Native / Mother Tongue"
+      },
+      {
+        "name": "English",
+        "level": "Fluent / Professional"
+      }
     ],
     "stats": [
-      {"value": 4, "suffix": "+", "label": "Years Experience"},
-      {"value": 25, "suffix": "+", "label": "Projects Completed"},
-      {"value": 12, "suffix": "", "label": "Certifications"},
-      {"value": 5, "suffix": "star", "label": "Client Rating Average"}
+      {
+        "value": 1,
+        "suffix": "+",
+        "label": "Year Experience"
+      },
+      {
+        "value": 10,
+        "suffix": "+",
+        "label": "Projects Completed"
+      },
+      {
+        "value": 5,
+        "suffix": "",
+        "label": "Certifications"
+      },
+      {
+        "value": 5,
+        "suffix": "★",
+        "label": "Client Rating Average"
+      }
     ]
   },
   "skillsData": {
     "frontend": [
-      {"name": "React", "level": 95},
-      {"name": "TypeScript", "level": 90},
-      {"name": "JavaScript", "level": 95},
-      {"name": "Tailwind CSS", "level": 92},
-      {"name": "HTML5 / CSS3", "level": 98}
+      {
+        "name": "React",
+        "level": 85
+      },
+      {
+        "name": "TypeScript",
+        "level": 80
+      },
+      {
+        "name": "JavaScript",
+        "level": 88
+      },
+      {
+        "name": "Tailwind CSS",
+        "level": 82
+      },
+      {
+        "name": "HTML5 / CSS3",
+        "level": 90
+      }
     ],
     "backend": [
-      {"name": "Node.js", "level": 88},
-      {"name": "Express.js", "level": 90},
-      {"name": "ASP.NET Core", "level": 82},
-      {"name": "C#", "level": 85}
+      {
+        "name": "ASP.NET Core",
+        "level": 82
+      },
+      {
+        "name": "C#",
+        "level": 80
+      }
     ],
     "database": [
-      {"name": "MongoDB", "level": 85},
-      {"name": "SQL Server", "level": 88},
-      {"name": "Oracle SQL", "level": 75}
+      {
+        "name": "PostgreSQL",
+        "level": 80
+      }
     ],
     "cloud": [
-      {"name": "AWS EC2", "level": 82},
-      {"name": "AWS S3", "level": 88},
-      {"name": "AWS IAM", "level": 80}
+      {
+        "name": "AWS EC2",
+        "level": 70
+      },
+      {
+        "name": "AWS S3",
+        "level": 72
+      }
     ],
     "devops": [
-      {"name": "Git and GitHub", "level": 92},
-      {"name": "Docker", "level": 80},
-      {"name": "Linux / Bash", "level": 78},
-      {"name": "Nginx", "level": 75}
+      {
+        "name": "Git & GitHub",
+        "level": 85
+      },
+      {
+        "name": "Linux / Bash",
+        "level": 70
+      },
+      {
+        "name": "Nginx",
+        "level": 68
+      }
     ],
     "tools": [
-      {"name": "VS Code and Visual Studio", "level": 95},
-      {"name": "Postman", "level": 90},
-      {"name": "Figma", "level": 78}
+      {
+        "name": "VS Code",
+        "level": 92
+      },
+      {
+        "name": "Figma",
+        "level": 78
+      },
+      {
+        "name": "Antigravity",
+        "level": 80
+      }
     ]
   },
   "projectsData": [
@@ -104,9 +167,15 @@ INSERT INTO public.portfolio (data) VALUES (
       "id": "employee-management-system",
       "name": "Employee Management System",
       "description": "An enterprise-grade administrative dashboard designed to manage employee roles, departments, attendance, payroll, and work performance metrics with fine-grained access control.",
-      "tech": ["React", "TypeScript", "ASP.NET Core", "SQL Server", "Tailwind CSS"],
+      "tech": [
+        "React",
+        "TypeScript",
+        "ASP.NET Core",
+        "PostgreSQL",
+        "Tailwind CSS"
+      ],
       "features": [
-        "Role-based authentication and authorization (Admin, Manager, Employee)",
+        "Role-based authentication & authorization (Admin, Manager, Employee)",
         "Interactive organogram and interactive directory list",
         "Dynamic leave request workflows with email notifications",
         "Comprehensive payroll processing module with payslip exports",
@@ -121,12 +190,18 @@ INSERT INTO public.portfolio (data) VALUES (
       "id": "hr-recruitment-portal",
       "name": "HR Recruitment Portal",
       "description": "An applicant tracking system (ATS) that streamlines the hiring process, from job posting creation to candidate application, interview scheduling, and final boarding workflows.",
-      "tech": ["React", "Node.js", "Express.js", "MongoDB", "Framer Motion"],
+      "tech": [
+        "React",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Framer Motion"
+      ],
       "features": [
         "Job board showing open positions with advanced search and filters",
-        "Rich CV parsing and visual candidate pipeline tracker",
-        "In-app messaging system for interviewer notes and scorecard voting",
-        "Calendar integration for automatic interview scheduling",
+        "Rich CV parsing and visual candidate pipeline tracker (drag & drop)",
+        "In-app messaging system for interviewer notes & scorecard voting",
+        "Calendar integration (Google/Outlook) for automatic interview scheduling",
         "Interactive onboarding checklist and document generator"
       ],
       "github": "https://github.com",
@@ -138,7 +213,13 @@ INSERT INTO public.portfolio (data) VALUES (
       "id": "e-commerce-website",
       "name": "Apex Electronics E-Commerce",
       "description": "A fast, SEO-optimized digital storefront featuring virtual product filters, cart management, checkout forms with Stripe mock integration, and customer order management panels.",
-      "tech": ["React", "TypeScript", "Tailwind CSS", "Express.js", "MongoDB"],
+      "tech": [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Express.js",
+        "MongoDB"
+      ],
       "features": [
         "Responsive layout with instant product filtering, sorting, and live searching",
         "Persistent shopping cart using Redux Toolkit and LocalStorage",
@@ -155,13 +236,19 @@ INSERT INTO public.portfolio (data) VALUES (
       "id": "portfolio-website",
       "name": "Interactive Portfolio Website",
       "description": "A modern developer showcase featuring glassmorphic designs, scroll animations, dynamic active-nav spies, custom gradients, and a responsive contact form.",
-      "tech": ["React", "TypeScript", "Tailwind CSS", "Framer Motion", "Vite"],
+      "tech": [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Framer Motion",
+        "Vite"
+      ],
       "features": [
         "Premium glassmorphism-based UI design optimized for dark theme",
         "Smooth section transitions and animations using Framer Motion",
         "Responsive navigation panel and progress trackers",
         "Interactive contact form with automated local input validation",
-        "Fast bundle load times leveraging Vite asset optimization pipelines"
+        "Fast bundle load times leveraging Vite''s asset optimization pipelines"
       ],
       "github": "https://github.com",
       "demo": "https://demo.com",
@@ -172,7 +259,13 @@ INSERT INTO public.portfolio (data) VALUES (
       "id": "task-management-app",
       "name": "FlowTask Management App",
       "description": "A collaborative project management application featuring customizable Kanban boards, sprint backlogs, and real-time dashboard analytics.",
-      "tech": ["React", "TypeScript", "Node.js", "SQL Server", "Tailwind CSS"],
+      "tech": [
+        "React",
+        "TypeScript",
+        "ASP.NET Core",
+        "PostgreSQL",
+        "Tailwind CSS"
+      ],
       "features": [
         "Draggable Kanban boards with customizable columns and labels",
         "Real-time checklist updates and task priority tagging",
@@ -188,79 +281,132 @@ INSERT INTO public.portfolio (data) VALUES (
   ],
   "experienceData": [
     {
-      "company": "InnovateTech Solutions",
-      "role": "Senior Full Stack Developer",
+      "company": "Current Organization",
+      "role": "Full Stack Developer",
       "duration": "2024 - Present",
       "responsibilities": [
-        "Architected and engineered enterprise SaaS platforms using React, TypeScript, and ASP.NET Core, boosting platform performance by 35%.",
-        "Led a team of 4 engineers to design and launch a custom microservices architecture communicating via RESTful APIs.",
-        "Optimized complex SQL Server query paths and database indices, reducing server response times by 40%.",
-        "Mentored junior developers, established modern CI/CD pipelines using GitHub Actions, and standardized code linting and testing strategies."
+        "Developing and maintaining full stack web applications using React, ASP.NET Core, and PostgreSQL.",
+        "Designing RESTful APIs with C# and ASP.NET Core, ensuring secure and efficient data communication.",
+        "Collaborating with cross-functional teams to transform UI designs from Figma into responsive web pages.",
+        "Performing database management and query optimization in PostgreSQL for improved performance."
       ],
-      "technologies": ["React", "TypeScript", "ASP.NET Core", "SQL Server", "Docker", "AWS"]
+      "technologies": [
+        "React",
+        "TypeScript",
+        "ASP.NET Core",
+        "C#",
+        "PostgreSQL",
+        "Git"
+      ]
     },
     {
-      "company": "WebSystems Development Ltd",
-      "role": "Full Stack Engineer",
-      "duration": "2022 - 2024",
-      "responsibilities": [
-        "Developed interactive responsive web dashboards for finance clients utilizing React and Node.js.",
-        "Built and integrated secure REST APIs with MongoDB, implementing JWT security and rate limiting.",
-        "Deployed and monitored system servers on AWS EC2, configuring Nginx reverse proxies and SSL setups.",
-        "Collaborated with UX/UI designers to transform Figma wireframes into high-performance components."
-      ],
-      "technologies": ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "Nginx", "Figma"]
-    },
-    {
-      "company": "DigitalCraft Labs",
+      "company": "Internship / Training",
       "role": "Junior Web Developer",
-      "duration": "2021 - 2022",
+      "duration": "2023 - 2024",
       "responsibilities": [
-        "Maintained and added features to client websites using JavaScript, HTML5, CSS3, and C# ASP.NET.",
-        "Wrote structured Oracle SQL scripts for daily data management tasks and generated reports.",
-        "Implemented responsive styles across multiple web pages, resolving visual bugs on mobile devices.",
-        "Utilized Git for source code control and participated in sprint reviews."
+        "Built responsive web interfaces using HTML5, CSS3, JavaScript, and React.",
+        "Assisted in developing backend modules using ASP.NET Core and C# following MVC patterns.",
+        "Worked with PostgreSQL databases for data insertion, retrieval, and report generation.",
+        "Used Git & GitHub for version control and collaborated in agile sprint cycles."
       ],
-      "technologies": ["JavaScript", "HTML5", "CSS3", "C#", "Oracle SQL", "Git"]
+      "technologies": [
+        "JavaScript",
+        "HTML5",
+        "CSS3",
+        "C#",
+        "ASP.NET Core",
+        "PostgreSQL",
+        "Git"
+      ]
     }
   ],
   "educationData": [
     {
-      "degree": "Master of Science in Computer Science",
-      "college": "State University School of Engineering",
-      "university": "State University",
-      "year": "2019 - 2021",
-      "score": "GPA: 3.9 / 4.0"
+      "degree": "Bachelor of Computer Applications (BCA)",
+      "college": "Erode Arts and Science College",
+      "university": "Erode Arts and Science College, Erode",
+      "year": "2020 - 2023",
+      "score": "First Class with Distinction"
     },
     {
-      "degree": "Bachelor of Engineering in Information Technology",
-      "college": "Tech Institute of Science",
-      "university": "National Technological University",
-      "year": "2015 - 2019",
-      "score": "Percentage: 86.5%"
+      "degree": "Higher Secondary School (12th Standard)",
+      "college": "Government Higher Secondary School",
+      "university": "Government Higher Secondary School, Tiruppur",
+      "year": "2019 - 2020",
+      "score": "Percentage: 91%"
     }
   ],
   "certificationsData": [
-    {"name": "AWS Certified Cloud Practitioner", "issuer": "Amazon Web Services (AWS)", "year": "2025", "icon": "Cloud"},
-    {"name": "Advanced React Developer", "issuer": "Meta / Coursera", "year": "2024", "icon": "React"},
-    {"name": "TypeScript Professional Developer Certificate", "issuer": "Microsoft / EdX", "year": "2023", "icon": "Code"},
-    {"name": "Modern JavaScript Certified Specialist", "issuer": "W3Schools", "year": "2022", "icon": "Award"},
-    {"name": "Database Administrator Specialist (SQL Server)", "issuer": "Microsoft", "year": "2022", "icon": "Database"},
-    {"name": "DevOps Foundations Certification", "issuer": "Linux Foundation", "year": "2023", "icon": "Terminal"}
+    {
+      "name": "AWS Certified Cloud Practitioner",
+      "issuer": "Amazon Web Services (AWS)",
+      "year": "2025",
+      "icon": "Cloud"
+    },
+    {
+      "name": "Advanced React Developer",
+      "issuer": "Meta / Coursera",
+      "year": "2024",
+      "icon": "React"
+    },
+    {
+      "name": "TypeScript Professional Developer Certificate",
+      "issuer": "Microsoft / EdX",
+      "year": "2023",
+      "icon": "Code"
+    },
+    {
+      "name": "Modern JavaScript Certified Specialist",
+      "issuer": "W3Schools",
+      "year": "2022",
+      "icon": "Award"
+    },
+    {
+      "name": "Database Administrator Specialist (PostgreSQL)",
+      "issuer": "Microsoft",
+      "year": "2022",
+      "icon": "Database"
+    },
+    {
+      "name": "DevOps Foundations Certification",
+      "issuer": "Linux Foundation",
+      "year": "2023",
+      "icon": "Terminal"
+    }
   ],
   "servicesData": [
-    {"title": "Web Application Development", "description": "Creating highly interactive, secure, and performant web applications customized to meet specific business objectives.", "icon": "Globe"},
-    {"title": "Frontend Engineering", "description": "Building responsive, pixel-perfect user interfaces with optimized render lifecycles, rich transitions, and standard accessibility.", "icon": "Layout"},
-    {"title": "Backend Development", "description": "Designing scalable server systems, object relational mappers, robust business logic, and modular database architectures.", "icon": "Server"},
-    {"title": "REST API Development", "description": "Building well-documented, JSON-compliant, rate-limited REST APIs following industry standards.", "icon": "Cpu"},
-    {"title": "Cloud and DevOps Integration", "description": "Configuring environment containerization, setting up continuous deployments, and managing cloud server scaling.", "icon": "CloudLightning"}
+    {
+      "title": "Web Application Development",
+      "description": "Creating highly interactive, secure, and performant web applications customized to meet specific business objectives.",
+      "icon": "Globe"
+    },
+    {
+      "title": "Frontend Engineering",
+      "description": "Building responsive, pixel-perfect user interfaces with optimized render lifecycles, rich transitions, and standard accessibility.",
+      "icon": "Layout"
+    },
+    {
+      "title": "Backend Development",
+      "description": "Designing scalable server systems, object relational mappers, robust business logic, and modular database architectures.",
+      "icon": "Server"
+    },
+    {
+      "title": "REST API Development",
+      "description": "Building well-documented, JSON-compliant, rate-limited REST APIs following industry standards.",
+      "icon": "Cpu"
+    },
+    {
+      "title": "Cloud & DevOps Integration",
+      "description": "Setting up continuous deployments, configuring server environments, and managing cloud server scaling.",
+      "icon": "CloudLightning"
+    }
   ],
   "testimonialsData": [
     {
       "name": "Sarah Jenkins",
       "role": "Product Director",
       "company": "ApexFin Tech",
-      "content": "Alex Morgan is a phenomenal software developer. They took our complex dashboard wireframes and built a high-performance React application in record time. Clean code, professional communication, and outstanding performance.",
+      "content": "Lavanya Ponnusamy is a phenomenal software developer. They took our complex dashboard wireframes and built a high-performance React application in record time. Clean code, professional communication, and outstanding performance.",
       "rating": 5,
       "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80"
     },
@@ -268,7 +414,7 @@ INSERT INTO public.portfolio (data) VALUES (
       "name": "Michael Chen",
       "role": "Technical Founder",
       "company": "LaunchPad Labs",
-      "content": "We hired Alex to build out our recruitment portal backend and API layers. The architecture is incredibly robust, easy to read, and documented beautifully. An absolute pleasure to pair program with.",
+      "content": "We hired Lavanya to build out our recruitment portal''s backend and API layers. The architecture is incredibly robust, easy to read, and documented beautifully. An absolute pleasure to pair program with.",
       "rating": 5,
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80"
     },
@@ -276,7 +422,7 @@ INSERT INTO public.portfolio (data) VALUES (
       "name": "Emily Rodriguez",
       "role": "Operations Manager",
       "company": "Core Retail Group",
-      "content": "Alex redesigned our online catalog interface and optimized the entire site. Our page loading times dropped by 50% and mobile user conversions increased instantly. Their attention to minor details is exceptional.",
+      "content": "Lavanya redesigned our online catalog interface and optimized the entire site. Our page loading times dropped by 50% and mobile user conversions increased instantly. Their attention to minor details is exceptional.",
       "rating": 5,
       "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150&q=80"
     }

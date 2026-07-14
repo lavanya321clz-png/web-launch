@@ -30,7 +30,7 @@ export const Education: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-3xl sm:text-4xl font-bold tracking-tight text-white mb-2"
+            className="text-3xl sm:text-4xl font-bold tracking-tight text-[#0f172a] mb-2"
           >
             Education History
           </motion.h2>
@@ -55,7 +55,7 @@ export const Education: React.FC = () => {
             <motion.div
               key={idx}
               variants={itemVariants}
-              className="glass-card rounded-2xl p-8 border border-white/5 relative overflow-hidden group hover:border-blue-500/20 hover:bg-[#06193a]/40 transition-all duration-300 text-left flex flex-col justify-between"
+              className="glass-card rounded-2xl p-8 border border-blue-100 relative overflow-hidden group hover:border-blue-400/40 hover:bg-blue-50/60 transition-all duration-300 text-left flex flex-col justify-between"
             >
               {/* Backlight visual orb */}
               <div className="absolute -bottom-12 -left-12 w-28 h-28 rounded-full bg-blue-500/5 blur-xl group-hover:bg-blue-500/10 transition-colors" />
@@ -70,25 +70,25 @@ export const Education: React.FC = () => {
                   <div className="text-xs font-bold uppercase tracking-wider text-blue-400">
                     {edu.year}
                   </div>
-                  <h3 className="text-lg sm:text-xl font-bold text-white leading-snug">
+                  <h3 className="text-lg sm:text-xl font-bold text-[#0f172a] leading-snug">
                     {edu.degree}
                   </h3>
                 </div>
 
-                <div className="space-y-1 text-sm text-gray-400 font-medium">
+                <div className="space-y-1 text-sm text-slate-600 font-medium">
                   <div className="flex items-center gap-2">
                     <Landmark className="w-4 h-4 text-blue-400/80 shrink-0" />
                     <span>{edu.college}</span>
                   </div>
-                  <div className="text-xs text-gray-500 pl-6">
+                  <div className="text-xs text-slate-500 pl-6">
                     {edu.university}
                   </div>
                 </div>
               </div>
 
-              <div className="mt-8 pt-4 border-t border-white/5 flex items-center gap-2 text-sm text-gray-300 relative z-10">
-                <Award className="w-4.5 h-4.5 text-blue-400" />
-                <span className="font-semibold text-gray-200">{edu.score}</span>
+              <div className="mt-8 pt-4 border-t border-blue-100 flex items-center gap-2 text-sm text-slate-600 relative z-10">
+                <Award className="w-4.5 h-4.5 text-blue-500" />
+                <span className="font-semibold text-slate-700">{edu.score}</span>
               </div>
             </motion.div>
           ))}

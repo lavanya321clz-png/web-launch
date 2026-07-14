@@ -30,7 +30,7 @@ export const Experience: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-3xl sm:text-4xl font-bold tracking-tight text-white mb-2"
+            className="text-3xl sm:text-4xl font-bold tracking-tight text-[#0f172a] mb-2"
           >
             Professional Experience
           </motion.h2>
@@ -63,7 +63,7 @@ export const Experience: React.FC = () => {
                   }`}
                 >
                   {/* Timeline point indicator */}
-                  <div className="absolute left-4 md:left-1/2 top-4 -translate-y-1/2 md:-translate-x-1/2 w-8 h-8 rounded-full bg-dark-bg border-2 border-blue-500 z-20 flex items-center justify-center shadow-[0_0_10px_rgba(59,130,246,0.5)]">
+                  <div className="absolute left-4 md:left-1/2 top-4 -translate-y-1/2 md:-translate-x-1/2 w-8 h-8 rounded-full bg-white border-2 border-blue-500 z-20 flex items-center justify-center shadow-[0_0_10px_rgba(29,78,216,0.3)]">
                     <Briefcase className="w-3.5 h-3.5 text-blue-400" />
                   </div>
 
@@ -72,21 +72,21 @@ export const Experience: React.FC = () => {
 
                   {/* Timeline Card */}
                   <div className="w-full md:w-1/2 pl-12 md:pl-0 md:px-8">
-                    <div className="glass-card rounded-2xl p-6 border border-white/5 relative overflow-hidden group hover:border-blue-500/20 hover:bg-[#06193a]/40 transition-all duration-300 shadow-lg text-left">
+                    <div className="glass-card rounded-2xl p-6 border border-blue-100 relative overflow-hidden group hover:border-blue-400/40 hover:bg-blue-50/60 transition-all duration-300 shadow-lg text-left">
                       
                       {/* Gradient accents */}
                       <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-blue-500 to-sky-400" />
                       
                       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
                         <div>
-                          <h3 className="text-lg font-bold text-white group-hover:text-blue-400 transition-colors">
+                          <h3 className="text-lg font-bold text-[#0f172a] group-hover:text-blue-700 transition-colors">
                             {exp.role}
                           </h3>
-                          <span className="text-sm font-semibold text-blue-300">
+                          <span className="text-sm font-semibold text-blue-600">
                             {exp.company}
                           </span>
                         </div>
-                        <div className="flex items-center gap-1.5 text-xs text-gray-400 font-medium bg-white/5 border border-white/5 px-2.5 py-1 rounded-full w-fit">
+                        <div className="flex items-center gap-1.5 text-xs text-slate-500 font-medium bg-blue-50 border border-blue-100 px-2.5 py-1 rounded-full w-fit">
                           <Calendar className="w-3.5 h-3.5 text-blue-400" />
                           {exp.duration}
                         </div>
@@ -95,7 +95,7 @@ export const Experience: React.FC = () => {
                       {/* Bullet Responsibilities */}
                       <ul className="space-y-2 mb-5 list-none">
                         {exp.responsibilities.map((resp, i) => (
-                          <li key={i} className="text-xs sm:text-sm text-gray-400 flex items-start gap-2.5 leading-relaxed">
+                          <li key={i} className="text-xs sm:text-sm text-slate-600 flex items-start gap-2.5 leading-relaxed">
                             <span className="text-blue-500 shrink-0 mt-1">•</span>
                             <span>{resp}</span>
                           </li>
@@ -103,11 +103,11 @@ export const Experience: React.FC = () => {
                       </ul>
 
                       {/* Technologies summary */}
-                      <div className="flex flex-wrap gap-1.5 pt-3 border-t border-white/5">
+                      <div className="flex flex-wrap gap-1.5 pt-3 border-t border-blue-100">
                         {exp.technologies.map((tech) => (
                           <span
                             key={tech}
-                            className="text-[10px] font-semibold text-blue-300 bg-blue-500/10 px-2.5 py-0.5 rounded border border-blue-500/10"
+                            className="text-[10px] font-semibold text-blue-700 bg-blue-100 px-2.5 py-0.5 rounded border border-blue-200"
                           >
                             {tech}
                           </span>

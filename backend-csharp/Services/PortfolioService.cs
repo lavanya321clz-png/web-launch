@@ -48,30 +48,26 @@ namespace PortfolioAPI.Services
                         created_at TIMESTAMPTZ DEFAULT NOW()
                     );", transaction: transaction);
 
-                // 3. Seed portfolio table if empty
-                var count = await connection.ExecuteScalarAsync<int>(
-                    "SELECT COUNT(1) FROM public.portfolio;", transaction: transaction);
+                // 3. Seed portfolio table (truncate and insert to ensure update is applied)
+                await connection.ExecuteAsync("TRUNCATE TABLE public.portfolio;", transaction: transaction);
                 
-                if (count == 0)
+                string initialDataPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..", "..", "..", "..", "backend", "data", "portfolio.json");
+                if (!File.Exists(initialDataPath))
                 {
-                    string initialDataPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..", "..", "..", "..", "backend", "data", "portfolio.json");
-                    if (!File.Exists(initialDataPath))
-                    {
-                        initialDataPath = Path.Combine(Directory.GetCurrentDirectory(), "..", "backend", "data", "portfolio.json");
-                    }
+                    initialDataPath = Path.Combine(Directory.GetCurrentDirectory(), "..", "backend", "data", "portfolio.json");
+                }
 
-                    if (File.Exists(initialDataPath))
-                    {
-                        string initialJson = await File.ReadAllTextAsync(initialDataPath);
-                        await connection.ExecuteAsync(
-                            "INSERT INTO public.portfolio (data) VALUES (@Data::jsonb);",
-                            new { Data = initialJson }, transaction: transaction);
-                        _logger.LogInformation($"PostgreSQL: Seeded portfolio table with initial data from: {initialDataPath}");
-                    }
-                    else
-                    {
-                        _logger.LogWarning($"Portfolio seed file not found at expected paths.");
-                    }
+                if (File.Exists(initialDataPath))
+                {
+                    string initialJson = await File.ReadAllTextAsync(initialDataPath);
+                    await connection.ExecuteAsync(
+                        "INSERT INTO public.portfolio (data) VALUES (@Data::jsonb);",
+                        new { Data = initialJson }, transaction: transaction);
+                    _logger.LogInformation($"PostgreSQL: Seeded portfolio table with initial data from: {initialDataPath}");
+                }
+                else
+                {
+                    _logger.LogWarning($"Portfolio seed file not found at expected paths.");
                 }
 
                 transaction.Commit();

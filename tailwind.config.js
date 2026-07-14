@@ -9,23 +9,23 @@ export default {
     extend: {
       colors: {
         primary: {
-          50: '#f5f3ff',
-          100: '#ede9fe',
-          200: '#ddd6fe',
-          300: '#c4b5fd',
-          400: '#a78bfa',
-          500: '#8b5cf6',
-          600: '#7c3aed',
-          700: '#6d28d9',
-          800: '#5b21b6',
-          900: '#4c1d95',
-          955: '#1e1b4b',
+          50: '#eff6ff',
+          100: '#dbeafe',
+          200: '#bfdbfe',
+          300: '#93c5fd',
+          400: '#60a5fa',
+          500: '#3b82f6',
+          600: '#1d4ed8',
+          700: '#1e3a8a',
+          800: '#172554',
+          900: '#0f172a',
+          955: '#060e1f',
         },
         dark: {
-          bg: '#02000f', // Deep dark space background
-          card: 'rgba(10, 10, 25, 0.4)', // Glassmorphic card backing
+          bg: '#020c1b',        // Deep navy dark background
+          card: 'rgba(8, 22, 52, 0.45)', // Glassmorphic navy card
           border: 'rgba(255, 255, 255, 0.08)',
-          accent: '#8b5cf6'
+          accent: '#3b82f6'    // Navy blue accent
         }
       },
       fontFamily: {

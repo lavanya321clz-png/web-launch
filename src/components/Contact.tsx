@@ -83,7 +83,7 @@ export const Contact: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-3xl sm:text-4xl font-bold tracking-tight text-white mb-2"
+            className="text-3xl sm:text-4xl font-bold tracking-tight text-[#0f172a] mb-2"
           >
             Get In Touch
           </motion.h2>
@@ -92,7 +92,7 @@ export const Contact: React.FC = () => {
             whileInView={{ width: '80px' }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="h-1 bg-purple-500 mx-auto rounded-full"
+            className="h-1 bg-blue-500 mx-auto rounded-full"
           />
         </div>
 
@@ -107,48 +107,48 @@ export const Contact: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="lg:col-span-5 space-y-6 text-left"
           >
-            <h3 className="text-xl sm:text-2xl font-bold text-white">
+            <h3 className="text-xl sm:text-2xl font-bold text-[#0f172a]">
               Contact Information
             </h3>
-            <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
+            <p className="text-slate-500 text-sm sm:text-base leading-relaxed">
               Have a project in mind or want to discuss a software engineering opportunity? Drop me a line, and I will get back to you within 24 hours.
             </p>
 
             <div className="space-y-4 pt-4">
               {/* Mail channel */}
-              <div className="flex items-center gap-4 p-4 rounded-2xl glass-card border border-white/5 group hover:border-purple-500/15 transition-all">
-                <div className="w-10 h-10 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 group-hover:scale-110 transition-transform">
+              <div className="flex items-center gap-4 p-4 rounded-2xl glass-card border border-blue-100 group hover:border-blue-400/30 transition-all">
+                <div className="w-10 h-10 rounded-xl bg-blue-100 border border-blue-200 flex items-center justify-center text-blue-600 group-hover:scale-110 transition-transform">
                   <Mail className="w-5 h-5" />
                 </div>
                 <div>
-                  <div className="text-[10px] uppercase font-bold text-purple-400 tracking-wider">Email Address</div>
-                  <a href={`mailto:${personalInfo.email}`} className="text-sm font-semibold text-gray-200 hover:text-purple-400 transition-colors">
+                  <div className="text-[10px] uppercase font-bold text-blue-600 tracking-wider">Email Address</div>
+                  <a href={`mailto:${personalInfo.email}`} className="text-sm font-semibold text-slate-700 hover:text-blue-600 transition-colors">
                     {personalInfo.email}
                   </a>
                 </div>
               </div>
 
               {/* Phone channel */}
-              <div className="flex items-center gap-4 p-4 rounded-2xl glass-card border border-white/5 group hover:border-purple-500/15 transition-all">
-                <div className="w-10 h-10 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 group-hover:scale-110 transition-transform">
+              <div className="flex items-center gap-4 p-4 rounded-2xl glass-card border border-blue-100 group hover:border-blue-400/30 transition-all">
+                <div className="w-10 h-10 rounded-xl bg-blue-100 border border-blue-200 flex items-center justify-center text-blue-600 group-hover:scale-110 transition-transform">
                   <Phone className="w-5 h-5" />
                 </div>
                 <div>
-                  <div className="text-[10px] uppercase font-bold text-purple-400 tracking-wider">Call / Text</div>
-                  <a href={`tel:${personalInfo.phone}`} className="text-sm font-semibold text-gray-200 hover:text-purple-400 transition-colors">
+                  <div className="text-[10px] uppercase font-bold text-blue-600 tracking-wider">Call / Text</div>
+                  <a href={`tel:${personalInfo.phone}`} className="text-sm font-semibold text-slate-700 hover:text-blue-600 transition-colors">
                     {personalInfo.phone}
                   </a>
                 </div>
               </div>
 
               {/* Location channel */}
-              <div className="flex items-center gap-4 p-4 rounded-2xl glass-card border border-white/5 group hover:border-purple-500/15 transition-all">
-                <div className="w-10 h-10 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 group-hover:scale-110 transition-transform">
+              <div className="flex items-center gap-4 p-4 rounded-2xl glass-card border border-blue-100 group hover:border-blue-400/30 transition-all">
+                <div className="w-10 h-10 rounded-xl bg-blue-100 border border-blue-200 flex items-center justify-center text-blue-600 group-hover:scale-110 transition-transform">
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
-                  <div className="text-[10px] uppercase font-bold text-purple-400 tracking-wider">Location</div>
-                  <span className="text-sm font-semibold text-gray-200">
+                  <div className="text-[10px] uppercase font-bold text-blue-600 tracking-wider">Location</div>
+                  <span className="text-sm font-semibold text-slate-700">
                     {personalInfo.location}
                   </span>
                 </div>
@@ -157,13 +157,13 @@ export const Contact: React.FC = () => {
 
             {/* Social linkages */}
             <div className="space-y-3 pt-6">
-              <h4 className="text-sm font-bold uppercase text-white tracking-wider">Connect Socially</h4>
+              <h4 className="text-sm font-bold uppercase text-[#0f172a] tracking-wider">Connect Socially</h4>
               <div className="flex gap-3">
                 <a
                   href={personalInfo.github}
                   target="_blank"
                   rel="noreferrer"
-                  className="w-10 h-10 rounded-xl glass-card border border-white/5 hover:border-purple-500/30 flex items-center justify-center text-gray-400 hover:text-purple-400 hover:bg-purple-500/10 transition-all cursor-pointer"
+                  className="w-10 h-10 rounded-xl glass-card border border-blue-100 hover:border-blue-400/40 flex items-center justify-center text-slate-500 hover:text-blue-600 hover:bg-blue-50 transition-all cursor-pointer"
                   aria-label="GitHub Profile"
                 >
                   <Github className="w-5 h-5" />
@@ -172,7 +172,7 @@ export const Contact: React.FC = () => {
                   href={personalInfo.linkedin}
                   target="_blank"
                   rel="noreferrer"
-                  className="w-10 h-10 rounded-xl glass-card border border-white/5 hover:border-purple-500/30 flex items-center justify-center text-gray-400 hover:text-purple-400 hover:bg-purple-500/10 transition-all cursor-pointer"
+                  className="w-10 h-10 rounded-xl glass-card border border-blue-100 hover:border-blue-400/40 flex items-center justify-center text-slate-500 hover:text-blue-600 hover:bg-blue-50 transition-all cursor-pointer"
                   aria-label="LinkedIn Profile"
                 >
                   <Linkedin className="w-5 h-5" />
@@ -181,7 +181,7 @@ export const Contact: React.FC = () => {
                   href={personalInfo.twitter}
                   target="_blank"
                   rel="noreferrer"
-                  className="w-10 h-10 rounded-xl glass-card border border-white/5 hover:border-purple-500/30 flex items-center justify-center text-gray-400 hover:text-purple-400 hover:bg-purple-500/10 transition-all cursor-pointer"
+                  className="w-10 h-10 rounded-xl glass-card border border-blue-100 hover:border-blue-400/40 flex items-center justify-center text-slate-500 hover:text-blue-600 hover:bg-blue-50 transition-all cursor-pointer"
                   aria-label="Twitter Profile"
                 >
                   <Twitter className="w-5 h-5" />
@@ -198,7 +198,7 @@ export const Contact: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="lg:col-span-7 w-full"
           >
-            <div className="glass-card rounded-3xl p-6 sm:p-8 border border-white/5 relative overflow-hidden">
+            <div className="glass-card rounded-3xl p-6 sm:p-8 border border-blue-100 relative overflow-hidden">
               <AnimatePresence mode="wait">
                 {status === 'success' ? (
                   <motion.div
@@ -210,8 +210,8 @@ export const Contact: React.FC = () => {
                     <div className="w-16 h-16 rounded-full bg-green-500/10 border border-green-500/20 flex items-center justify-center text-green-400 mb-2">
                       <CheckCircle2 className="w-10 h-10 animate-bounce" />
                     </div>
-                    <h3 className="text-xl font-bold text-white">Message Transmitted!</h3>
-                    <p className="text-gray-400 text-sm max-w-xs leading-relaxed">
+                    <h3 className="text-xl font-bold text-[#0f172a]">Message Transmitted!</h3>
+                    <p className="text-slate-500 text-sm max-w-xs leading-relaxed">
                       Thank you for contacting me. I have received your message and will review it shortly.
                     </p>
                   </motion.div>
@@ -227,7 +227,7 @@ export const Contact: React.FC = () => {
                     {/* Name & Email flex rows */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                       <div className="space-y-1.5">
-                        <label htmlFor="name" className="text-xs font-bold text-gray-400 uppercase tracking-wide">
+                        <label htmlFor="name" className="text-xs font-bold text-slate-500 uppercase tracking-wide">
                           Full Name
                         </label>
                         <div className="relative">
@@ -238,7 +238,7 @@ export const Contact: React.FC = () => {
                             value={form.name}
                             onChange={handleChange}
                             placeholder="e.g. John Doe"
-                            className={`w-full px-4 py-3 rounded-xl glass-input text-sm text-white placeholder-gray-600 ${
+                            className={`w-full px-4 py-3 rounded-xl glass-input text-sm text-slate-700 ${
                               errors.name ? 'border-red-500/50 focus:border-red-500' : ''
                             }`}
                           />
@@ -252,7 +252,7 @@ export const Contact: React.FC = () => {
                       </div>
 
                       <div className="space-y-1.5">
-                        <label htmlFor="email" className="text-xs font-bold text-gray-400 uppercase tracking-wide">
+                        <label htmlFor="email" className="text-xs font-bold text-slate-500 uppercase tracking-wide">
                           Email Address
                         </label>
                         <div className="relative">
@@ -263,7 +263,7 @@ export const Contact: React.FC = () => {
                             value={form.email}
                             onChange={handleChange}
                             placeholder="e.g. john@email.com"
-                            className={`w-full px-4 py-3 rounded-xl glass-input text-sm text-white placeholder-gray-600 ${
+                            className={`w-full px-4 py-3 rounded-xl glass-input text-sm text-slate-700 ${
                               errors.email ? 'border-red-500/50 focus:border-red-500' : ''
                             }`}
                           />
@@ -279,7 +279,7 @@ export const Contact: React.FC = () => {
 
                     {/* Subject field */}
                     <div className="space-y-1.5">
-                      <label htmlFor="subject" className="text-xs font-bold text-gray-400 uppercase tracking-wide">
+                      <label htmlFor="subject" className="text-xs font-bold text-slate-500 uppercase tracking-wide">
                         Subject
                       </label>
                       <div className="relative">
@@ -290,7 +290,7 @@ export const Contact: React.FC = () => {
                           value={form.subject}
                           onChange={handleChange}
                           placeholder="e.g. Partnership Proposal"
-                          className={`w-full px-4 py-3 rounded-xl glass-input text-sm text-white placeholder-gray-600 ${
+                          className={`w-full px-4 py-3 rounded-xl glass-input text-sm text-slate-700 ${
                             errors.subject ? 'border-red-500/50 focus:border-red-500' : ''
                           }`}
                         />
@@ -305,7 +305,7 @@ export const Contact: React.FC = () => {
 
                     {/* Message body field */}
                     <div className="space-y-1.5">
-                      <label htmlFor="message" className="text-xs font-bold text-gray-400 uppercase tracking-wide">
+                      <label htmlFor="message" className="text-xs font-bold text-slate-500 uppercase tracking-wide">
                         Message Content
                       </label>
                       <div className="relative">
@@ -316,7 +316,7 @@ export const Contact: React.FC = () => {
                           onChange={handleChange}
                           rows={5}
                           placeholder="Write your details here..."
-                          className={`w-full px-4 py-3 rounded-xl glass-input text-sm text-white placeholder-gray-600 resize-none ${
+                          className={`w-full px-4 py-3 rounded-xl glass-input text-sm text-slate-700 resize-none ${
                             errors.message ? 'border-red-500/50 focus:border-red-500' : ''
                           }`}
                         />
@@ -333,7 +333,7 @@ export const Contact: React.FC = () => {
                     <button
                       type="submit"
                       disabled={status === 'submitting'}
-                      className="glow-btn w-full py-4 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 text-white rounded-xl font-semibold text-sm shadow-[0_0_15px_rgba(139,92,246,0.25)] flex items-center justify-center gap-2 cursor-pointer transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                      className="glow-btn w-full py-4 bg-gradient-to-r from-blue-700 to-blue-500 hover:from-blue-600 hover:to-sky-400 text-white rounded-xl font-semibold text-sm shadow-[0_0_15px_rgba(29,78,216,0.25)] flex items-center justify-center gap-2 cursor-pointer transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
                     >
                       {status === 'submitting' ? (
                         <>

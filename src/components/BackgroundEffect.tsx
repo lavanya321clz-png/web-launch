@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export const BackgroundEffect: React.FC = () => {
   return (
-    <div className="fixed inset-0 -z-50 overflow-hidden bg-[#030e27]">
+    <div className="fixed inset-0 -z-50 overflow-hidden bg-[#f0f6ff]">
       {/* Background glow orbs */}
       <motion.div 
         animate={{
@@ -16,7 +16,7 @@ export const BackgroundEffect: React.FC = () => {
           repeat: Infinity,
           ease: "easeInOut"
         }}
-        className="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] rounded-full bg-blue-800/12 blur-[130px]"
+        className="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] rounded-full bg-blue-300/20 blur-[130px]"
       />
       <motion.div 
         animate={{
@@ -29,7 +29,7 @@ export const BackgroundEffect: React.FC = () => {
           repeat: Infinity,
           ease: "easeInOut"
         }}
-        className="absolute bottom-[-10%] right-[-10%] w-[50vw] h-[50vw] rounded-full bg-sky-700/10 blur-[130px]"
+        className="absolute bottom-[-10%] right-[-10%] w-[50vw] h-[50vw] rounded-full bg-sky-200/30 blur-[130px]"
       />
       <motion.div 
         animate={{
@@ -41,12 +41,12 @@ export const BackgroundEffect: React.FC = () => {
           repeat: Infinity,
           ease: "easeInOut"
         }}
-        className="absolute top-[40%] right-[15%] w-[35vw] h-[35vw] rounded-full bg-blue-600/5 blur-[100px]"
+        className="absolute top-[40%] right-[15%] w-[35vw] h-[35vw] rounded-full bg-blue-200/15 blur-[100px]"
       />
 
-      {/* Grid line grid overlay with circular mask */}
+      {/* Subtle grid line overlay */}
       <div 
-        className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.01)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.01)_1px,transparent_1px)] bg-[size:4rem_4rem]"
+        className="absolute inset-0 bg-[linear-gradient(to_right,rgba(29,78,216,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(29,78,216,0.03)_1px,transparent_1px)] bg-[size:4rem_4rem]"
         style={{ 
           maskImage: 'radial-gradient(ellipse 60% 60% at 50% 50%, #000 60%, transparent 100%)', 
           WebkitMaskImage: 'radial-gradient(ellipse 60% 60% at 50% 50%, #000 60%, transparent 100%)' 

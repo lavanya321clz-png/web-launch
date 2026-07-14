@@ -45,7 +45,7 @@ export const Skills: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-3xl sm:text-4xl font-bold tracking-tight text-white mb-2"
+            className="text-3xl sm:text-4xl font-bold tracking-tight text-[#0f172a] mb-2"
           >
             Technical Skills
           </motion.h2>
@@ -98,7 +98,7 @@ export const Skills: React.FC = () => {
                   className="glass-card rounded-2xl p-5 border border-white/5 relative overflow-hidden group hover:border-blue-500/20 transition-all duration-300"
                 >
                   <div className="flex justify-between items-center mb-3">
-                    <span className="text-sm font-semibold text-gray-200 group-hover:text-white transition-colors">
+                    <span className="text-sm font-semibold text-slate-700 group-hover:text-[#0f172a] transition-colors">
                       {skill.name}
                     </span>
                     <span className="text-xs font-bold text-blue-400">

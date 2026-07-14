@@ -63,8 +63,8 @@ export const Navbar: React.FC = () => {
           onClick={() => handleNavClick('hero')} 
           className="text-xl font-bold tracking-tight cursor-pointer flex items-center gap-1 group"
         >
-          <span className="text-white font-semibold">Alex</span>
-          <span className="text-blue-400 group-hover:text-blue-300 transition-colors duration-300">Morgan.</span>
+          <span className="text-navy-900 font-semibold text-[#0f172a]">Lavanya</span>
+          <span className="text-blue-600 group-hover:text-blue-500 transition-colors duration-300">Ponnusamy.</span>
         </button>
 
         {/* Desktop Navigation Links */}
@@ -75,8 +75,8 @@ export const Navbar: React.FC = () => {
               onClick={() => handleNavClick(item.id)}
               className={`relative px-4 py-2 text-sm font-medium rounded-full cursor-pointer transition-colors duration-300 ${
                 activeSection === item.id 
-                  ? 'text-white' 
-                  : 'text-gray-400 hover:text-white'
+                  ? 'text-blue-700 font-semibold' 
+                  : 'text-slate-600 hover:text-blue-700'
               }`}
             >
               {activeSection === item.id && (
@@ -106,7 +106,7 @@ export const Navbar: React.FC = () => {
         <button
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
-          className="md:hidden p-2 text-gray-400 hover:text-white cursor-pointer"
+          className="md:hidden p-2 text-slate-600 hover:text-blue-700 cursor-pointer"
         >
           {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
@@ -129,8 +129,8 @@ export const Navbar: React.FC = () => {
                   onClick={() => handleNavClick(item.id)}
                   className={`text-left py-2 px-4 rounded-lg text-sm font-medium transition-all ${
                     activeSection === item.id 
-                      ? 'text-white bg-blue-500/10 border-l-2 border-blue-500 pl-3' 
-                      : 'text-gray-400 hover:text-white pl-2'
+                      ? 'text-blue-700 bg-blue-100 border-l-2 border-blue-600 pl-3' 
+                      : 'text-slate-600 hover:text-blue-700 pl-2'
                   }`}
                 >
                   {item.label}

@@ -35,7 +35,7 @@ export const Footer: React.FC = () => {
   ];
 
   return (
-    <footer className="relative bg-[#02000d]/90 border-t border-white/5 py-12">
+    <footer className="relative bg-[#e8f0fe]/90 border-t border-blue-100 py-12">
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
         
         {/* Logo and copyright */}
@@ -44,11 +44,11 @@ export const Footer: React.FC = () => {
             onClick={() => handleScrollTo('hero')}
             className="text-lg font-bold tracking-tight cursor-pointer"
           >
-            <span className="text-white font-semibold">Alex</span>
-            <span className="text-purple-500">Morgan.</span>
+            <span className="text-[#0f172a] font-semibold">Lavanya</span>
+            <span className="text-blue-600">Ponnusamy.</span>
           </button>
-          <p className="text-xs text-gray-500">
-            &copy; {currentYear} Alex Morgan. All rights reserved.
+          <p className="text-xs text-slate-500">
+            &copy; {currentYear} Lavanya Ponnusamy. All rights reserved.
           </p>
         </div>
 
@@ -58,7 +58,7 @@ export const Footer: React.FC = () => {
             <button
               key={link.id}
               onClick={() => handleScrollTo(link.id)}
-              className="text-xs font-semibold text-gray-400 hover:text-white cursor-pointer transition-colors"
+              className="text-xs font-semibold text-slate-500 hover:text-blue-700 cursor-pointer transition-colors"
             >
               {link.label}
             </button>
@@ -66,22 +66,22 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Social and scroll to top */}
-        <div className="flex items-center space-x-6 text-gray-400">
+        <div className="flex items-center space-x-6 text-slate-500">
           <div className="flex items-center space-x-4">
-            <a href={personalInfo.github} target="_blank" rel="noreferrer" className="hover:text-purple-400 transition-colors" aria-label="GitHub">
+            <a href={personalInfo.github} target="_blank" rel="noreferrer" className="hover:text-blue-600 transition-colors" aria-label="GitHub">
               <Github className="w-4 h-4" />
             </a>
-            <a href={personalInfo.linkedin} target="_blank" rel="noreferrer" className="hover:text-purple-400 transition-colors" aria-label="LinkedIn">
+            <a href={personalInfo.linkedin} target="_blank" rel="noreferrer" className="hover:text-blue-600 transition-colors" aria-label="LinkedIn">
               <Linkedin className="w-4 h-4" />
             </a>
-            <a href={personalInfo.twitter} target="_blank" rel="noreferrer" className="hover:text-purple-400 transition-colors" aria-label="Twitter">
+            <a href={personalInfo.twitter} target="_blank" rel="noreferrer" className="hover:text-blue-600 transition-colors" aria-label="Twitter">
               <Twitter className="w-4 h-4" />
             </a>
           </div>
 
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="p-2 rounded-lg bg-white/5 hover:bg-white/10 hover:text-white border border-white/5 cursor-pointer flex items-center justify-center transition-all duration-300"
+            className="p-2 rounded-lg bg-blue-50 hover:bg-blue-100 hover:text-blue-700 border border-blue-100 cursor-pointer flex items-center justify-center transition-all duration-300"
             aria-label="Back to top"
           >
             <ArrowUp className="w-4 h-4" />

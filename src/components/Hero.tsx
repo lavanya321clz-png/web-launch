@@ -13,8 +13,8 @@ export const Hero: React.FC = () => {
   
   const roles = [
     "Full Stack Developer",
-    "React & TypeScript Specialist",
-    "Cloud Integration Enthusiast",
+    "ASP.NET Core Specialist",
+    "React & TypeScript Developer",
     "Clean Code Practitioner"
   ];
 
@@ -69,7 +69,7 @@ export const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-card border border-blue-500/30 text-blue-400 text-xs font-semibold uppercase tracking-wider"
+            className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-card border border-blue-500/30 text-blue-700 text-xs font-semibold uppercase tracking-wider"
           >
             <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
             Available for new opportunities
@@ -80,7 +80,7 @@ export const Hero: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight"
+              className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-[#0f172a]"
             >
               Hi, I'm <span className="text-glow-gradient">{personalInfo.fullName}</span>
             </motion.h1>
@@ -89,11 +89,11 @@ export const Hero: React.FC = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-300 h-10 flex items-center"
+              className="text-xl sm:text-2xl md:text-3xl font-semibold text-slate-700 h-10 flex items-center"
             >
               <span>A&nbsp;</span>
               <span className="gradient-text-purple-blue">{typedText}</span>
-              <span className="inline-block w-[3px] h-[1.1em] bg-blue-400 ml-1 animate-[pulse_1s_infinite]" />
+              <span className="inline-block w-[3px] h-[1.1em] bg-blue-600 ml-1 animate-[pulse_1s_infinite]" />
             </motion.div>
           </div>
 
@@ -101,7 +101,7 @@ export const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-base sm:text-lg text-gray-400 max-w-xl leading-relaxed"
+            className="text-base sm:text-lg text-slate-500 max-w-xl leading-relaxed"
           >
             {personalInfo.description}
           </motion.p>
@@ -122,10 +122,10 @@ export const Hero: React.FC = () => {
             </button>
             <a
               href={personalInfo.resumeUrl}
-              className="px-8 py-4 glass-card border border-white/10 hover:border-blue-500/40 text-gray-200 hover:text-white rounded-full font-semibold text-sm flex items-center justify-center gap-2 cursor-pointer transition-all duration-300"
+              className="px-8 py-4 glass-card border border-blue-200 hover:border-blue-500/40 text-slate-700 hover:text-blue-700 rounded-full font-semibold text-sm flex items-center justify-center gap-2 cursor-pointer transition-all duration-300"
             >
               Download Resume
-              <Download className="w-4 h-4 text-blue-400" />
+              <Download className="w-4 h-4 text-blue-600" />
             </a>
           </motion.div>
 
@@ -134,15 +134,15 @@ export const Hero: React.FC = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.5 }}
-            className="flex items-center space-x-4 pt-4 text-gray-400"
+            className="flex items-center space-x-4 pt-4 text-slate-500"
           >
-            <a href={personalInfo.github} target="_blank" rel="noreferrer" className="hover:text-blue-400 transition-colors" aria-label="GitHub">
+            <a href={personalInfo.github} target="_blank" rel="noreferrer" className="hover:text-blue-600 transition-colors" aria-label="GitHub">
               <Github className="w-5 h-5" />
             </a>
-            <a href={personalInfo.linkedin} target="_blank" rel="noreferrer" className="hover:text-blue-400 transition-colors" aria-label="LinkedIn">
+            <a href={personalInfo.linkedin} target="_blank" rel="noreferrer" className="hover:text-blue-600 transition-colors" aria-label="LinkedIn">
               <Linkedin className="w-5 h-5" />
             </a>
-            <a href={personalInfo.twitter} target="_blank" rel="noreferrer" className="hover:text-blue-400 transition-colors" aria-label="Twitter">
+            <a href={personalInfo.twitter} target="_blank" rel="noreferrer" className="hover:text-blue-600 transition-colors" aria-label="Twitter">
               <Twitter className="w-5 h-5" />
             </a>
           </motion.div>
@@ -175,10 +175,10 @@ export const Hero: React.FC = () => {
             <motion.div
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -top-4 -right-4 glass-card border border-blue-500/30 px-3.5 py-2 rounded-2xl flex items-center gap-2 shadow-lg"
+              className="absolute -top-4 -right-4 glass-card border border-blue-300/50 px-3.5 py-2 rounded-2xl flex items-center gap-2 shadow-lg"
             >
               <span className="text-xl">💻</span>
-              <span className="text-xs font-semibold text-white/95">Full-Stack dev</span>
+              <span className="text-xs font-semibold text-[#0f172a]">Full-Stack dev</span>
             </motion.div>
 
             <motion.div
@@ -187,7 +187,7 @@ export const Hero: React.FC = () => {
               className="absolute -bottom-4 -left-4 glass-card border border-blue-500/30 px-3.5 py-2 rounded-2xl flex items-center gap-2 shadow-lg"
             >
               <span className="text-xl">🚀</span>
-              <span className="text-xs font-semibold text-white/95">Fast performance</span>
+              <span className="text-xs font-semibold text-[#0f172a]">Fast performance</span>
             </motion.div>
           </motion.div>
         </div>

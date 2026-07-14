@@ -31,7 +31,7 @@ function AppContent() {
   const showLoader = visualLoading || loading;
 
   return (
-    <div className="relative min-h-screen text-gray-100 overflow-x-hidden selection:bg-blue-500/30 selection:text-white">
+    <div className="relative min-h-screen text-slate-800 overflow-x-hidden selection:bg-blue-500/30 selection:text-blue-900">
       <AnimatePresence mode="wait">
         {showLoader && (
           <LoadingScreen onComplete={() => setVisualLoading(false)} />
